@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="validation script.js"></script>
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="dropdown.css">
+    <title>
+        Registration-Staff||Abstergo
+    </title>
+    <link rel="icon" type="image/ico" href="ab.ico">
+    </head>
+    <body style="background-color: white;">
+         <div class="top">
+            <a href="index.html">
+            <img src="ab.png" width="auto" height="60px" class="align" style="display: block; margin-left: auto;margin-right: auto;">
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+           <!--- <div class="float">-->
+            <div class="dropdown" style="float: right;">
+              <button class="dropbtn"> Login
+                <i class="fas fa-sign-in-alt"></i> 
+                <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" style="margin-top: 50px;">
+                <a href="stafflogin.html"><i class="fas fa-hospital-user"></i> Staff</a>
+                <a href="patientlogin.html"><i class="fas fa-user-injured"></i> Patient</a>
+                </div>
+              </div>
+              <div class="dropdown" style="float: right;">
+                <button class="dropbtn"> Register
+                  <i class="fas fa-user-plus"></i>
+                  <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="Registration Pagestaff.html"><i class="fas fa-hospital-user"></i> Staff Registration</a>
+                  <a href="registrationpagepatient.html"><i class="fas fa-user-injured"></i> Patient Registration</a>
+                  </div>
+                </div>
+                <a href="apptchdl.html"><i class="far fa-calendar-alt"></i> Appointment Schedule</a>
+                <a href="Contact us Page.html"><i class="fas fa-mobile-alt"></i> Contact Us</a>
+          
+        </div>
+        <h1 style="font-size: 24px; text-align: center;">Hello Again !!! We Would Love For You to Join Us In Our mission to Improve the Medical and Scientific Industry
+        </h1> 
+        <h1>
+                Staff Registration
+            </h1>
+              <p> 
+               Fill Out the Form Below to Join Our Workforce
+            </p>
+            <form name="authForm" action="stafflogin.html" method="POST">
+              <fieldset style="width: 94%;">
+              <legend>Personal Data</legend>
+          
+             
+  
+              <label><b>First Name</b></label><br>
+              <input type="text" placeholder="Enter First Name" name="fname" ><br>
+  
+              <label><b>Last Name</b></label><br>
+              <input type="text" placeholder="Enter Last Name" name="lname" ><br>
+              
+               <label><b>Email</b></label><br>
+              <input type="email" placeholder="Enter Email" name="email" ><br>
+              
+              <label><b>Telephone Number (with country code)</b></label><br>
+              <input type="tel" placeholder="Telephone No." name="telno" ><br>
+  
+              <label><b>Country</b></label><br>
+              <input type="text" placeholder="Country" name="cntry" ><br>
+  
+              <label><b>State/City</b></label><br>
+              <input type="text" placeholder="State/City" name="statecity" ><br>
+  
+              <label><b>Date of Birth</b></label><br>
+              <br>
+              <input type="date" name="dbirth"><br>
+              <br>
+              <label><b>Upload a Passport(500X450)</b></label><br>
+              <br>
+             <input type="file" id="file" name="pPort"><br>
+              <br>
+              <label><b>Gender</b></label><br>
+              <input type="radio" id="male" name="gender" value="male">
+              <label>Male</label><br>
+  
+              <input type="radio" id="fmale" name="gender" value="Female">
+              <label>Female</label><br>
+  
+              <input type="radio" id="nbn" name="gender" value="nonbn">
+              <label>Non-Binary</label><br>
+  
+              <input type="radio" id="unsp" name="gender" value="unsp">
+              <label>Rather Not Say</label><br>
+              <br>
+              <label><b>Blood Group</b></label><br>
+              <input type="radio" id="bldgrp" name="bgrp" value="A+">
+              <label>A+</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="A">
+              <label>A-</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="B+">
+              <label>B+</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="B-">
+              <label>B-</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="AB+">
+              <label>AB+</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="AB-">
+              <label>AB-</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="O+">
+              <label>O+</label><br>
+  
+              <input type="radio" id="bldgrp" name="bgrp" value="O-">
+              <label>O-</label><br>
+  
+              <label><b>Blood Genotype</b></label><br>
+              <select name="bgntp" id="bldgp">
+                  <option value="null"></option>
+                 <option value="AA" >AA</option> 
+                 <option value="AS">AS</option>
+                 </select>
+                 </fieldset>
+  
+               
+            <fieldset style="width: 94%;">
+              <legend>Education</legend>
+              <label><b>Type of Education</b></label><br>
+              <p>Please Tick Appropriately and Specify where Needed</p>
+          <input type="checkbox" id="edu1" name="edu" value="k-n2">
+          <label>Kindergaten to Nursery 2</label><br>
+
+          <input type="checkbox" id="edu2" name="edu" value="g1-5">
+          <label>Grade 1 - Grade 5</label><br>
+
+          <input type="checkbox" id="edu3" name="edu" value="g7-9">
+          <label>Grade 7 - Grade 9</label><br>
+
+          <input type="checkbox" id="edu4" name="edu" value="g10-12">
+          <label>Grade 10 - Grade 12</label><br>
+              <br>
+          <input type="checkbox" id="edu5" name="edu" value="deg">
+          <label>Bachelor's Degree (Bsc./B.Eng/BAS/MB)</label><br>
+          <input type="text" placeholder="Please Specify Here with Finished Institution"><br>
+
+          <input type="checkbox" id="edu6" name="edu" value="adv">
+          <label>Master's Degree</label><br>
+          <input type="text" placeholder="Please Specify Here with Finished Institution"><br>
+
+          <input type="checkbox" id="edu7" name="edu" value="adv">
+          <label>Ph.d</label><br>
+          <input type="text" placeholder="Please Specify Here with Finished Institution"><br>
+
+          <input type="checkbox" id="edu8" name="edu" value="other">
+          <label>Other</label><br>
+          <input type="text" placeholder="Please Specify Here with Finished Institution" ><br>
+          <input type="reset">
+
+          </fieldset>
+
+          <fieldset style="width: 94%;">
+            <legend>Miscellaneous Information</legend>
+           
+                <li><label>How do you prefer to work?</label></li>
+                <input type="radio" id="work" name="wk" value="phy">
+                <label>Physically</label><br>
+    
+                <input type="radio" id="work" name="wk" value="rem">
+                <label>Remotely</label><br>
+    
+                <input type="radio" id="work" name="wk" value="bth">
+                <label>Both</label><br>
+
+                <li><label>What type of working environment do you prefer?</label></li><br>
+                <input type="text" name="env" placeholder="Type Here">
+                  <li>How many years of work experience do you have?</li><br>
+                  <input type="number" name="wkxp" id="wkp" min="1" max="5">
+            </ol>
+            <p>Thanks for your feedback</p>
+          </fieldset>
+              </fieldset>
+              <fieldset style="width: 94%;">
+                  <legend>User Registration:</legend>
+                  <label><b>Username</b></label><br>
+                <input type="text" placeholder=" Enter Username" name="usm" ><br>
+  
+                <label><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="pwd" ><br>
+            
+                <label><b>Repeat Password</b></label><br>
+                <input type="password" placeholder="Repeat Password" name="pwd1" >
+                
+                <p style="text-align: center; font-size: 20px;">By creating an account you accept that all Information given is valid</p>                </fieldset>
+                <button class="registerbtn" onclick="return authform()"  style="width: 100%;">Submit</button>
+          </form>
+          
+    </body>
+</html>

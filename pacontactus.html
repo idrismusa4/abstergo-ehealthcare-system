@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="contactpage.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+
+  <link rel="stylesheet" href="dropdown.css">
+    <head>
+    
+    <title>
+        Contact Us||Abstergo
+    </title>
+    <link rel="icon" type="image/ico" href="ab.ico">
+    <script src="contact validation.js"></script>
+    </head>
+    <body style="background-color: white;">
+        <div class="top">
+            <a href="patindex.html">
+            <img src="ab.png" width="auto" height="60px" class="align" style="display: block; margin-left: auto;margin-right: auto;">
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="patindex.html"><i class="fas fa-home"></i> Home</a>
+           <!--- <div class="float">-->
+              <div class="dropdown" style="float: right;">
+                <button class="dropbtn"> Profile
+                    <i class="fas fa-user-circle"></i>
+                     <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="patloginuser.html"><i class="fas fa-portrait"></i> My Profile</a>
+                  <a href="index.html"><i class="fas fa-sign-in-alt"></i> Log Out</a>
+                  </div>
+                </div>
+                <a href="papptschdl.html"><i class="far fa-calendar-alt"></i> Appointment Schedule</a>
+                <a href="patloginuser.html"><i class="fas fa-address-book"></i> Dashboard</a>
+                <a href="pacontactus.html"><i class="fas fa-mobile-alt"></i> Contact Us</a>
+                
+          
+        </div> 
+        
+        <h2>We Are Always Happy to Hear From  Our Customers</h2>
+        <p>Please do us a favor by filling in the form below with your suggestions,complaints or other issues</p>
+        <form name="validform" method="POST" action="index.html">
+            <label><b>First Name</b></label><br>
+            <input type="text" placeholder="Enter First Name" name="frname"><br>
+
+            <label><b>Last Name</b></label><br>
+            <input type="text" placeholder="Enter Last Name" name="lsname" ><br>
+            
+             <label><b>Email</b></label><br>
+            <input type="email" placeholder="Enter Email" name="email" ><br>
+            
+            <label><b>Telephone Number (with country code)</b></label><br>
+            <input type="tel" placeholder="Telephone No. (Optional)" name="telno"><br>
+
+            <label><b>Reason for Contact:</b></label><br>
+            <select style="margin-left: 6px;">
+                <option value="Complaints">Complaint(s)</option>
+                <option value="Suggestions">Suggestions</option>
+                <option value="Other" selected>Other</option>
+            </select><br>
+            <br>
+            <label><b>Type your Message Below:</b></label><br>
+            <textarea name="message" style="margin-left: 6px; width: 700px; height: 400px;" placeholder="Type your Message Here....."></textarea>
+            
+          <button class="registerbtn"><a href="patindex.html">Submit</a></button>
+            </form>
+    </body>
+</html>

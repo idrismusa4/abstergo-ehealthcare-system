@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="dropdown.css">
+        <link rel="stylesheet" href="login_css.css">
+        <style>
+            
+            table,td,th{border: 1px solid black;}
+            .center
+            {
+             text-align: center;
+             list-style-position: inside;
+            }
+            ol.center li
+            {
+             text-align: left;
+             margin-left: 43%;
+            }
+            .middle{
+                text-align: center;
+                list-style-position: inside;
+            }
+
+            ul.middle li{
+                text-align: left;
+                margin-left: 43%;
+            }
+
+        
+        </style>
+    <title>
+        Dashboard-Staff||Abstergo
+    </title>
+    <link rel="icon" type="image/ico" href="ab.ico">
+    </head>
+    <body style="background-image: url(12.png);">
+         <div class="top">
+            <a href="stindex.html">
+            <img src="ab.png" width="auto" height="60px" class="align" style="display: block; margin-left: auto;margin-right: auto;">
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="stindex.html"><i class="fas fa-home"></i> Home</a>
+           <!--- <div class="float">-->
+              <div class="dropdown" style="float: right;">
+                <button class="dropbtn"> Profile
+                    <i class="fas fa-user-circle"></i>
+                     <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="sloginuser.html"><i class="fas fa-portrait"></i> My Profile</a>
+                  <a href="index.html"><i class="fas fa-sign-in-alt"></i> Log Out</a>
+                  </div>
+                </div>
+                <a href="sapptschdl.html"><i class="far fa-calendar-alt"></i> Appointment Schedule</a>
+                <a href="sloginuser.html"> <i class="fas fa-address-book"></i> Dashboard</a>
+                
+          
+        </div> 
+        
+            <center>
+            <div style="background-color: white; width: 95%; height: 85%;">
+                <h1 style="text-align: left;">
+                    Dashboard
+                    </h1>
+                          <p style="text-align: left;"> 
+                           Here are the Available Appointments for Today, You can choose vacant spaces to fill in:
+                        </p>
+                        <table align="center">
+                            <tbody>
+                        
+                            <tr>
+                                <th colspan="4">MORNING SCHEDULE</th>
+                            </tr>
+                            <tr>
+
+                                <th>TIME</th>
+                                <th>DOCTOR NAME</th>
+                                <th>NOTES</th>
+                                <th>NUMBER OF PATIENTS</th>
+                            </tr>
+                            <tr>
+                                <td>7:00am-10:00am</td>
+                                <td>Dr. Melanie Lemay</td>
+                                <td>Padieatric,Child treatment</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>7:00am-10:00am</td>
+                                <td>Vacant</td>
+                                <td>Test Collection, Surgical Operations</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>11:00am-11:50am</td>
+                                <td>Vacant</td>
+                                <td>Ward Duty,Diagnostics</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>11:00am-11:50am</td>
+                                <td>Dr. Edward Kenway</td>
+                                <td>Consultation</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">AFTERNOON SCHEDULE</th>
+                            </tr>
+                            <tr>
+
+                                <th>TIME</th>
+                                <th>DOCTOR NAME</th>
+                                <th>NOTES</th>
+                                <th>NUMBER OF PATIENTS</th>
+                            </tr>
+                            <tr>
+                                <td>12:00pm-1:00pm</td>
+                                <td>Dr. Àltäir bn La'Ahad</td>
+                                <td>Padieatric,Child treatment</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>1:00pm-2:00pm</td>
+                                <td>Dr. John Price</td>
+                                <td>Sample Collection</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>3:00pm-3:30pm</td>
+                                <td>Dr. Umar Hassan</td>
+                                <td>Consultation</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>4:00pm-5:50pm</td>
+                                <td>Vacant</td>
+                                <td>Test Collection, Surgical Operations</td>
+                                <td>10</td>
+                            </tr>
+                            
+                            </tbody></table>
+                            <h2 style="text-align: left;">Please fill in the suitable time for your services</h2>
+                            <em style="text-align: left;">Note: Fill in for spaces that indicated "Vacant" in the Appointment Schedule</em><br>
+            <br><label style="text-align: left;"><b>Time</b></label><br>
+            <input type="time" name="time"><br>
+            <label style="text-align: left;"><b>Number of Patients that can be treated:</b></label>
+            <input type="number" min="1" max="20"><br>
+            <label><b>Notes:</b></label>
+            <input type="text"><br>
+            <label><b>Name:</b></label>
+            <input type="text"><br>
+           <a href="stindex.html"> <input class="registerbtn" type="button" value="Save Changes" style="width: 94%;" onclick="alert('Schedule Saved Sucessfully')"></a>
+             </center>
+            </div>
+
+    </body>
+</html>

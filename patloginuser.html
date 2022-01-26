@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="dropdown.css">
+        <link rel="stylesheet" href="login_css.css">
+    <title>
+        Dashboard-Patient||Abstergo
+    </title>
+    <link rel="icon" type="image/ico" href="ab.ico">
+    </head>
+    <body style="background-image: url(12.png);">
+         <div class="top">
+            <a href="patindex.html">
+            <img src="ab.png" width="auto" height="60px" class="align" style="display: block; margin-left: auto;margin-right: auto;">
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="patindex.html"><i class="fas fa-home"></i> Home</a>
+           <!--- <div class="float">-->
+              <div class="dropdown" style="float: right;">
+                <button class="dropbtn"> Profile
+                    <i class="fas fa-user-circle"></i>
+                     <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                  <a href="patloginuser.html"><i class="fas fa-portrait"></i> My Profile</a>
+                  <a href="index.html"><i class="fas fa-sign-in-alt"></i> Log Out</a>
+                  </div>
+                </div>
+                <a href="papptschdl.html"><i class="far fa-calendar-alt"></i> Appointment Schedule</a>
+                <a href="patloginuser.html"><i class="fas fa-address-book"></i> Dashboard</a>
+                <a href="pacontactus.html"><i class="fas fa-mobile-alt"></i> Contact Us</a>
+
+          
+        </div> 
+        
+            <center>
+            <div style="background-color: white; width: 95%; height: 85%;">
+                <h1 style="text-align: left;">
+                    Dashboard
+                    </h1>
+                         <h2>Book an Appointment</h2>
+                        
+                            <h2 style="text-align: left;">Please fill in the suitable time for your Appointment</h2>
+                            <em style="text-align: left;">Note: Appointment Times May be Modified by Your Selected Doctor</em>
+        
+            <br><label><b>Name:</b></label>
+            <input type="text"><br>
+            <label><b>Time:</b></label>
+            <input type="time"><br>
+            <label><b>Date:</b></label>
+            <input type="date"><br>
+            <label><b>Doctor's Name:</b></label>
+            <select>
+                <option value="null"></option>
+                <option value="1">Dr. Melanie Lemay</option>
+                <option value="2">Dr. Edward Kenway</option>
+                <option value="3">Dr. Umar Hassan</option>
+                <option value="4">Dr. Àltäir bn La'Ahad</option>
+                <option value="5">Dr. John Price</option>
+                <option value="6">Dr. Warren Vidic</option>
+                <option value="7">Dr. Sophia Rikkin</option>
+            </select>
+            <br>
+            <label><b>Temperature:</b></label>
+            <input type="text" placeholder="e.g 36C"><br>
+            <br>
+            <label><b>Blood Pressure:</b></label>
+            <input type="text" placeholder="e.g 160/70mm/Hg"><br>
+            
+            <label><b>Reason for Appointment:</b></label>
+            <input type="text">
+
+           <a href="patindex.html"> <input class="registerbtn" type="button" value="Save Changes" style="width: 94%;" onclick="alert('Appointment Saved Sucessfully')"></a>
+             </center>
+            </div>
+
+    </body>
+</html>
