@@ -114,26 +114,4 @@ function authform() {
    //     alert("Repeat Password");
    //     return false;
    // }
-
-  
-
-   
-   
-
-
-
-  
-    
-        
-    
-
-    
-    
-
-    
-    
-
-
-    
-
 }

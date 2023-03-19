@@ -12,10 +12,11 @@
     </title>
     <link rel="icon" type="image/ico" href="ab.ico">
     <script>
-function myFunction() {
-  alert("Your Response has Been Received!!!");
-}
-</script>
+      function myFunction(){
+        alert("Thank you for contacting us. We will get back to you soon");
+      }
+      </script>
+      
     </head>
     <body style="background-color: white;">
         <div class="top">
@@ -55,7 +56,7 @@ function myFunction() {
         
         <h2>We Are Always Happy to Hear From  Our Customers</h2>
         <p>Please do us a favor by filling in the form below with your suggestions,complaints or other issues</p>
-        <form name="validform"  action="index.html" onsubmit="myFunction()">
+        <form name="validform"  action="Index.html" onsubmit="myFunction()" data-netlify="true" method="post">
             <label><b>First Name</b></label><br>
             <input type="text" placeholder="Enter First Name" name="frname"><br>
 
@@ -78,7 +79,7 @@ function myFunction() {
             <label><b>Type your Message Below:</b></label><br>
             <textarea name="message" style="margin-left: 6px; width: 700px; height: 400px;" placeholder="Type your Message Here....."></textarea>
             
-            <button class="registerbtn" >Submit</button>
+            <button class="registerbtn">Submit</button>
             </form>
     </body>
 </html>
